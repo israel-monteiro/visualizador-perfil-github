@@ -141,6 +141,69 @@ main {
   box-shadow: var(--shadow-sm);
 }
 
+.profile-results {
+  width: 100%;
+  margin-top: var(--spacing-xl);
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  width: auto;
+  max-width: 100%;
+  padding: var(--spacing-lg);
+}
+
+.profile-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  text-align: left;
+}
+
+.profile-name {
+  font-size: var(--font-2xl);
+  margin: 0 0 var(--spacing-sm);
+  color: var(--primary);
+}
+
+
+.profile-bio {
+  margin: 0 0 var(--spacing-sm);
+  color: var(--muted-foreground);
+  line-height: 1.6;
+}
+
+
+@media (max-width: 720px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-info {
+    text-align: center;
+  }
+
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 .container .profile-results.hide {
   display: none;
+}
+
+.loading {
+  font-size: var(--font-lg);
+  font-weight: 500;
+  margin: var(--spacing-xl) auto;
 }

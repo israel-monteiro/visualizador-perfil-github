@@ -228,3 +228,64 @@ main {
   font-size: var(--font-3xl);
   font-weight: bold;
 }
+
+.profile-repositories {
+  width: 100%;
+  margin-top: var(--spacing-xl);
+}
+
+.profile-repositories h2 {
+  font-size: var(--font-xl);
+  margin-bottom: var(--spacing-lg);
+  color: var(--primary);
+  text-align: center;
+}
+
+.repositories {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.repository-card {
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 1.25);
+  padding: var(--spacing-lg);
+  text-align: left;
+  box-shadow: var(--shadow-sm);
+}
+
+.repository-card h3 {
+  font-size: var(--font-lg);
+  margin: 0 0 var(--spacing-sm);
+  color: var(--primary);
+}
+
+.repository-card p {
+  margin: 0 0 var(--spacing-md);
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}
+
+.repository-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.repository-stats span {
+  background: var(--muted);
+  border-radius: calc(var(--radius) - 2px);
+  padding: 0.25rem 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--font-xs);
+  color: var(--foreground);
+}
+
+@media (max-width: 720px) {
+  .profile-repositories h2 {
+    text-align: center;
+  }
+}

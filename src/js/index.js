@@ -5,7 +5,7 @@ const inputSearch = document.getElementById("input-search");
 const btnSearch = document.getElementById("btn-search");
 const profileResults = document.querySelector(".profile-results");
 
-async function getUserProfile(p) {
+async function getUserProfile() {
     const userName = inputSearch.value.trim();
 
     if (userName) {

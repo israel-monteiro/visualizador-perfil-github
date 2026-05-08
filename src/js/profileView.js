@@ -1,5 +1,5 @@
 export function renderProfile(userData, userRepos, container) {
-    const repoositoriesHTM = userRepos && userRepos.length > 0 ? userRepos.map((repo) => `
+    const repositoriesHTM = userRepos && userRepos.length > 0 ? userRepos.map((repo) => `
         <a href="${repo.html_url}" target="_blank">    
           <div class="repository-card">
               <h3>${repo.name}</h3>
@@ -36,7 +36,7 @@ export function renderProfile(userData, userRepos, container) {
     <div class="profile-repositories">
       <h2>Repositórios</h2>
       <div class="repositories">
-        ${repoositoriesHTM}
+        ${repositoriesHTM}
       </div>
     </div>
   `;
